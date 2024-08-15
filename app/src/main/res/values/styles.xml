@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BaseText" parent="Widget.AppCompat.TextView">
+        <item name="fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="BoldText" parent="Widget.AppCompat.TextView">
+        <item name="fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="Title" parent="BoldText">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="ButtonText" parent="BoldText">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="CellTitle" parent="Title">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="CellDescription" parent="BaseText">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+</resources>

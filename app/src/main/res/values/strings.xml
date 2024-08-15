@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CellFilling</string>
+    <string name="title">Клеточное наполнение</string>
+    <string name="btn_text">Сотворить</string>
+    <string name="dead_title">Мёртвая</string>
+    <string name="alive_title">Живая</string>
+    <string name="life_title">Жизнь</string>
+    <string name="dead_description">или прикидывается</string>
+    <string name="alive_description">и шевелится!</string>
+    <string name="life_description">Ку-ку!</string>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="indigo">#310050</color>
+    <color name="seance">#5A3472</color>
+    <color name="dark_cerulean">#0D658A</color>
+    <color name="mint_green">#B0FFB4</color>
+    <color name="selective_yellow">#FFB800</color>
+    <color name="moccasin">#FFF7B0</color>
+    <color name="electric_purple">#AD00FF</color>
+    <color name="cotton_candy">#FFB0E9</color>
+</resources>
