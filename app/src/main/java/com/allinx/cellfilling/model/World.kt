@@ -16,13 +16,14 @@ class World {
         return listCell
     }
 
-    fun addCell(){
+    fun addCell(id: Int){
         val random = SecureRandom()
         val rand = random.nextBoolean()
         //если true добавляем живую клетку,
         //обновляем счетчики подряд идущих живых и мертвых клеток
         if(rand){
             val cell = Cell.Alive
+            cell.id = id
             listCell.add(cell)
             kolAlive += 1
             kolDead = 0
@@ -31,17 +32,19 @@ class World {
         //обновляем счетчики подряд идущих живых и мертвых клеток
         else{
             val cell = Cell.Dead
+            cell.id = id
             listCell.add(cell)
             kolAlive = 0
             kolDead += 1
         }
-        updateWorld()
+        updateWorld(id)
     }
 
     //добавляем или удаляем клетки "жизнь" в зависимости от счетчиков
-    private fun updateWorld(){
+    private fun updateWorld(id: Int){
         if(kolAlive == 3){
             val cell = Cell.Life
+            cell.id = id
             indLife.add(listCell.size)
             listCell.add(cell)
             kolAlive = 0

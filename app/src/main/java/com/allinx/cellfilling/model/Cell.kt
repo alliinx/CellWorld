@@ -7,6 +7,14 @@ sealed class Cell {
     data object Dead : Cell()
     data object Life : Cell()
 
+    private var cellId = -1
+
+    var id: Int
+        get() = cellId
+        set(curId: Int){
+            cellId = curId
+        }
+
     val title: Int
         get() = when (this) {
             is Dead -> R.string.dead_title
